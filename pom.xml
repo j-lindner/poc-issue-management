@@ -4,9 +4,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <name>Camunda Process Solution</name>
-  <description>A process solution for Camunda Platform 8</description>
-  <groupId>org.example.camunda.process.solution</groupId>
-  <artifactId>camunda-lowcode-ui-solution</artifactId>
+  <description>lowcode-ui-solution</description>
+  <groupId>io.camunda</groupId>
+  <artifactId>jens-poc-lowcode-ui-solution</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 
   <parent>
@@ -18,7 +18,7 @@
 
   <properties>
     <java.version>17</java.version>
-    <spring-zeebe.version>8.2.2</spring-zeebe.version>
+    <spring-zeebe.version>8.3.0</spring-zeebe.version>
   </properties>
 
   <dependencies>
@@ -37,12 +37,12 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-websocket</artifactId>
     </dependency>
-    
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
-    
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-security</artifactId>
@@ -51,7 +51,7 @@
 		    <groupId>org.keycloak</groupId>
 		    <artifactId>keycloak-spring-boot-starter</artifactId>
 		</dependency>
-    
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-cache</artifactId>
@@ -90,7 +90,7 @@
     <dependency>
       <groupId>io.camunda</groupId>
       <artifactId>camunda-operate-client-java</artifactId>
-      <version>1.3.8</version>
+      <version>8.3.0</version>
     </dependency>
 
     <!-- gmail, drive, thymeleaf & feel -->
@@ -104,7 +104,7 @@
       <artifactId>jakarta.mail</artifactId>
       <version>1.6.7</version>
     </dependency>
-    
+
     <!-- css generation with string replacement -->
 	<dependency>
       <groupId>commons-io</groupId>
@@ -116,14 +116,14 @@
       <artifactId>commons-text</artifactId>
       <version>1.10.0</version>
     </dependency>
-    
+
     <!-- find workers to generate elt templates -->
 	<dependency>
       <groupId>org.reflections</groupId>
       <artifactId>reflections</artifactId>
       <version>0.10.2</version>
 	</dependency>
-	
+
     <!-- h2 runtime -->
     <dependency>
       <groupId>com.h2database</groupId>
@@ -137,7 +137,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -255,7 +255,7 @@
             <configuration>
               <outputDirectory>${project.build.directory}</outputDirectory>
               <resources>
-               
+
                 <!-- Copy React index file and manifest -->
                 <resource>
                   <directory>${basedir}/src/main/react/tasklist/build</directory>

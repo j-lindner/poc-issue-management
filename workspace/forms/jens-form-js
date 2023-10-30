@@ -1,0 +1,45 @@
+{
+  "name" : "jens-form-js",
+  "modified" : 1698695878386,
+  "schema" : {
+    "components" : [ {
+      "label" : "Number",
+      "type" : "number",
+      "layout" : {
+        "row" : "Row_1l8wxzt",
+        "columns" : null
+      },
+      "id" : "Field_0hi6hm1",
+      "key" : "field_0r9bktt"
+    }, {
+      "label" : "Text field",
+      "type" : "textfield",
+      "layout" : {
+        "row" : "Row_0p36nxq",
+        "columns" : null
+      },
+      "id" : "Field_1bqi9n2",
+      "key" : "field_038nmqt"
+    }, {
+      "label" : "Number",
+      "type" : "number",
+      "layout" : {
+        "row" : "Row_0f510m9",
+        "columns" : null
+      },
+      "id" : "Field_00sslvs",
+      "key" : "field_1drxml3"
+    } ],
+    "schemaVersion" : 10,
+    "type" : "default",
+    "id" : "Form_8812224",
+    "executionPlatform" : "Camunda Cloud",
+    "executionPlatformVersion" : "1.1",
+    "exporter" : {
+      "name" : "Camunda Modeler",
+      "version" : "5.0.0"
+    }
+  },
+  "previewData" : { },
+  "generator" : "formJs"
+}
